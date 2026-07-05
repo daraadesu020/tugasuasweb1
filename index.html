@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ilsa Bakery - Roti &amp; Kue Rumahan Pekalongan</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ilsa bakery, roti, kue, pekalongan, siwalan, krengseng" name="keywords">
+    <meta content="Ilsa Bakery, toko roti dan kue rumahan di Desa Siwalan, Krengseng, Pekalongan. Pesan online, bayar mudah dengan QRIS." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Extra styles for added sections (kept separate from style.css on purpose) -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        section[id] {
+            scroll-margin-top: 100px;
+        }
+        /* Video Section */
+        
+        .promo-video-wrapper {
+            width: 300px;
+            height: 960px;
+            max-width: 100%;
+            max-height: 70vh;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+            position: relative;
+            background: #000;
+        }
+        
+        .promo-video-wrapper video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .promo-video-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            z-index: 2;
+        }
+        /* Product cards (best seller / unggulan) */
+        
+        .menu-item {
+            position: relative;
+        }
+        
+        .menu-item .ribbon {
+            position: absolute;
+            top: 15px;
+            left: -6px;
+            z-index: 2;
+            padding: 5px 15px 5px 20px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .3px;
+            border-radius: 0 20px 20px 0;
+        }
+        
+        .ribbon-terlaris {
+            background: #D4A24C;
+            color: #fff;
+        }
+        
+        .ribbon-unggulan {
+            background: #2b2b2b;
+            color: #fff;
+        }
+        
+        .menu-item .menu-price {
+            font-weight: 700;
+        }
+        /* Cara Belanja steps */
+        
+        .step-circle {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        /* Maps */
+        
+        .maps-frame {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 10px;
+        }
+        /* Cart badge */
+        
+        #cartCountBadge {
+            position: absolute;
+            top: -6px;
+            right: -8px;
+            font-size: 11px;
+        }
+        
+        .cart-line-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+        }
+        
+        #qrisImage {
+            max-width: 260px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="small text-light" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="small text-light" href="#">Career</a></li>
+                    <li class="breadcrumb-item"><a class="small text-light" href="#">Terms</a></li>
+                    <li class="breadcrumb-item"><a class="small text-light" href="#">Privacy</a></li>
+                </ol>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn-lg-square text-primary border-end rounded-0" href="https://instagram.com/ilsabakery" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="btn-lg-square text-primary border-end rounded-0" href="https://tiktok.com/@ilsabakery" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a class="btn-lg-square text-primary pe-0" href="https://youtube.com/@ilsabakery" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="#home" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="text-primary m-0">Ilsa Bakery</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#services" class="nav-item nav-link">Services</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produk</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="#kategori" class="dropdown-item">Kategori Produk</a>
+                        <a href="#terlaris" class="dropdown-item">Produk Terlaris</a>
+                        <a href="#unggulan" class="dropdown-item">Produk Unggulan</a>
+                    </div>
+                </div>
+                <a href="#video" class="nav-item nav-link">Video</a>
+                <a href="#cara-belanja" class="nav-item nav-link">Cara Belanja</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Info</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="#team" class="dropdown-item">Tim Kami</a>
+                        <a href="#testimonial" class="dropdown-item">Testimoni</a>
+                        <a href="#maps" class="dropdown-item">Lokasi &amp; Maps</a>
+                        <a href="#sosmed" class="dropdown-item">Sosial Media</a>
+                    </div>
+                </div>
+                <a href="#footer" class="nav-item nav-link">Contact</a>
+            </div>
+            <div class=" d-none d-lg-flex align-items-center">
+                <button type="button" class="btn-lg-square border border-light rounded-circle position-relative bg-transparent me-4" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+                    <i class="fa fa-shopping-cart text-primary"></i>
+                    <span id="cartCountBadge" class="badge rounded-pill bg-danger">0</span>
+                </button>
+                <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
+                    <i class="fa fa-phone text-primary"></i>
+                </div>
+                <div class="ps-3">
+                    <small class="text-primary mb-0">Call Us</small>
+                    <p class="text-light fs-5 mb-0">+62 812 3456 7890</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div id="home" class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-8">
+                                <p class="text-primary text-uppercase fw-bold mb-2">// Ilsa Bakery</p>
+                                <h1 class="display-1 text-light mb-4 animated slideInDown">Roti &amp; Kue Rumahan Penuh Cinta</h1>
+                                <p class="text-light fs-5 mb-4 pb-3">Dipanggang segar setiap hari di Desa Siwalan, Krengseng, Pekalongan. Pesan mudah, bayar praktis pakai QRIS.</p>
+                                <a href="#kategori" class="btn btn-primary rounded-pill py-3 px-5">Lihat Produk</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-8">
+                                <p class="text-primary text-uppercase fw-bold mb-2">// Ilsa Bakery</p>
+                                <h1 class="display-1 text-light mb-4 animated slideInDown">Kualitas Terjaga, Rasa Autentik</h1>
+                                <p class="text-light fs-5 mb-4 pb-3">Dari bahan pilihan hingga proses pembuatan, kami jaga kualitas di setiap gigitan roti dan kue Ilsa Bakery.</p>
+                                <a href="#terlaris" class="btn btn-primary rounded-pill py-3 px-5">Best Seller Kami</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-xxl py-6">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
+                        <p class="mb-2">Years Experience</p>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">50</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-users fa-4x text-primary mb-4"></i>
+                        <p class="mb-2">Skilled Professionals</p>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">175</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-bread-slice fa-4x text-primary mb-4"></i>
+                        <p class="mb-2">Total Products</p>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">135</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-cart-plus fa-4x text-primary mb-4"></i>
+                        <p class="mb-2">Order Everyday</p>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">9357</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- About Start -->
+    <div id="about" class="container-xxl py-6">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row img-twice position-relative h-100">
+                        <div class="col-6">
+                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
+                        </div>
+                        <div class="col-6 align-self-end">
+                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <p class="text-primary text-uppercase mb-2">// Tentang Kami</p>
+                        <h1 class="display-6 mb-4">Ilsa Bakery, Roti Rumahan Penuh Cinta</h1>
+                        <p>Ilsa Bakery adalah usaha roti dan kue rumahan yang berlokasi di Desa Siwalan, Krengseng 01/07, Kecamatan Siwalan, Pekalongan. Berawal dari kecintaan pada dunia baking, kami berkomitmen menghadirkan roti dan kue segar dengan bahan
+                            berkualitas untuk keluarga Anda.</p>
+                        <p>Setiap produk dibuat dengan resep pilihan, tanpa bahan pengawet berlebih, dan selalu dipanggang dalam kondisi hangat untuk menjaga cita rasa terbaik. Sekarang Anda juga bisa pesan online dan bayar praktis menggunakan QRIS.</p>
+                        <div class="row g-2 mb-4">
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-2"></i>Quality Products
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-2"></i>Custom Products
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-2"></i>Online Order
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-2"></i>Home Delivery
+                            </div>
+                        </div>
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="#kategori">Lihat Produk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Product Start -->
+    <div id="kategori" class="container-xxl bg-light my-6 py-6 pt-0">
+        <div class="container">
+            <div class="bg-primary text-light rounded-bottom p-5 my-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 text-light mb-0">Ilsa Bakery, Toko Roti Favorit di Pekalonganmu</h1>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                        <div class="d-inline-flex align-items-center text-start">
+                            <i class="fa fa-phone-alt fa-4x flex-shrink-0"></i>
+                            <div class="ms-4">
+                                <p class="fs-5 fw-bold mb-0">Call Us</p>
+                                <p class="fs-1 fw-bold mb-0">+62 812 3456 7890</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">// Kategori Produk</p>
+                <h1 class="display-6 mb-4">Jelajahi Kategori Produk Ilsa Bakery</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border border-primary rounded-pill px-3 mb-3">Rp 35rb - Rp 150rb</div>
+                            <h3 class="mb-3">Cake</h3>
+                            <span>Aneka kue tart dan cake lembut untuk ulang tahun, hadiah, atau momen spesial Anda</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/product-1.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-eye text-primary"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3">Rp 8rb - Rp 25rb</div>
+                            <h3 class="mb-3">Bread</h3>
+                            <span>Roti tawar, roti sobek, dan roti isi yang lembut dan dipanggang segar setiap hari</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/product-2.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-eye text-primary"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3">Rp 15rb - Rp 40rb</div>
+                            <h4 class="mb-3">Cookies</h4>
+                            <span>Cookies renyah dengan berbagai varian rasa, cocok untuk camilan atau hampers</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/product-3.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-eye text-primary"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product End -->
+
+
+    <!-- Service Start -->
+    <div id="services" class="container-xxl py-6">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="text-primary text-uppercase mb-2">// Layanan Kami</p>
+                    <h1 class="display-6 mb-4">Apa Saja yang Kami Tawarkan?</h1>
+                    <p class="mb-5">Ilsa Bakery hadir untuk memudahkan Anda menikmati roti dan kue rumahan berkualitas, dari pemesanan online hingga pengiriman ke rumah Anda di area Pekalongan dan sekitarnya.</p>
+                    <div class="row gy-5 gx-4">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                    <i class="fa fa-bread-slice text-white"></i>
+                                </div>
+                                <h5 class="mb-0">Quality Products</h5>
+                            </div>
+                            <span>Bahan pilihan dan proses higienis untuk setiap produk yang kami buat</span>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                    <i class="fa fa-birthday-cake text-white"></i>
+                                </div>
+                                <h5 class="mb-0">Custom Products</h5>
+                            </div>
+                            <span>Bisa custom rasa dan ukuran kue sesuai acara dan kebutuhan Anda</span>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                    <i class="fa fa-cart-plus text-white"></i>
+                                </div>
+                                <h5 class="mb-0">Online Order</h5>
+                            </div>
+                            <span>Pesan langsung dari website ini dan bayar mudah dengan QRIS</span>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                    <i class="fa fa-truck text-white"></i>
+                                </div>
+                                <h5 class="mb-0">Home Delivery</h5>
+                            </div>
+                            <span>Pengiriman ke rumah Anda di area Siwalan, Krengseng, Pekalongan dan sekitarnya</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row img-twice position-relative h-100">
+                        <div class="col-6">
+                            <img class="img-fluid rounded" src="img/service-1.jpg" alt="">
+                        </div>
+                        <div class="col-6 align-self-end">
+                            <img class="img-fluid rounded" src="img/service-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Team Start -->
+    <div id="team" class="container-xxl py-6">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">// Tim Kami</p>
+                <h1 class="display-6 mb-4">Kenalan Dengan Tim Ilsa Bakery</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <img class="img-fluid" src="img/team-1.jpg" alt="Ilham Perkasa">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Ilham</h5>
+                                <span>Founder &amp; Head Baker</span>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-square btn-light rounded-circle" href="https://instagram.com/ilsabakery" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href="https://tiktok.com/@ilsabakery" target="_blank"><i class="fab fa-tiktok"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href="https://youtube.com/@ilsabakery" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <img class="img-fluid" src="img/team-2.jpg" alt="Siti Aminah">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Raihan</h5>
+                                <span>Baker Utama</span>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-square btn-light rounded-circle" href="https://instagram.com/ilsabakery" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href="https://tiktok.com/@ilsabakery" target="_blank"><i class="fab fa-tiktok"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href="https://youtube.com/@ilsabakery" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <img class="img-fluid" src="img/team-3.jpg" alt="Budi Santoso">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Zidan</h5>
+                                <span>Kasir &amp; Admin Pesanan</span>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-square btn-light rounded-circle" href="https://instagram.com/ilsabakery" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href="https://tiktok.com/@ilsabakery" target="_blank"><i class="fab fa-tiktok"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href="https://youtube.com/@ilsabakery" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <img class="img-fluid" src="img/team-4.jpg" alt="Rina Wulandari">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Ide</h5>
+                                <span>Marketing &amp; Media Sosial</span>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-square btn-light rounded-circle" href="https://instagram.com/ilsabakery" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href="https://tiktok.com/@ilsabakery" target="_blank"><i class="fab fa-tiktok"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href="https://youtube.com/@ilsabakery" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div id="testimonial" class="container-xxl bg-light my-6 py-6 pb-0">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">// Ulasan Pelanggan</p>
+                <h1 class="display-6 mb-4">Dipercaya Ratusan Pelanggan di Pekalongan</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item bg-white rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-1.jpg" alt="Dewi Lestari">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Dewi Lestari</h5>
+                            <span>Ibu Rumah Tangga</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Roti sobek kejunya lembut banget dan selalu fresh. Pesan lewat website juga gampang, bayarnya tinggal scan QRIS.</p>
+                </div>
+                <div class="testimonial-item bg-white rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-2.jpg" alt="Ahmad Fauzi">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Ahmad Fauzi</h5>
+                            <span>Karyawan Swasta</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Cheese cake-nya juara, cocok buat acara kantor. Sudah beberapa kali pesan dan selalu puas dengan rasanya.</p>
+                </div>
+                <div class="testimonial-item bg-white rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-3.jpg" alt="Putri Anggraini">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Hendra Saputra</h5>
+                            <span>Mahasiswa</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Harganya ramah di kantong mahasiswa, tapi rasanya nggak murahan. Cookies-nya jadi teman belajar favorit aku.</p>
+                </div>
+                <div class="testimonial-item bg-white rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-4.jpg" alt="Hendra Saputra">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Putri Anggraini</h5>
+                            <span>Pengusaha Kuliner</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Sebagai sesama pelaku usaha kuliner, saya lihat Ilsa Bakery serius menjaga kualitas dan konsisten dari waktu ke waktu.</p>
+                </div>
+            </div>
+            <div class="bg-primary text-light rounded-top p-5 my-6 mb-0 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h1 class="display-4 text-light mb-0">Subscribe Our Newsletter</h1>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <div class="position-relative">
+                            <input class="form-control bg-transparent border-light w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-dark py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Video Section Start -->
+    <section id="video" class="container-xxl py-6">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">// Video Profil</p>
+                <h1 class="display-6 mb-4">Lihat Kesibukan Dapur Ilsa Bakery</h1>
+                <p>Proses pembuatan roti dan kue di dapur Ilsa Bakery setiap harinya.</p>
+            </div>
+            <div class="promo-video-wrapper wow zoomIn" data-wow-delay="0.2s">
+                <span class="badge bg-primary promo-video-badge">Behind The Scene</span>
+                <video controls muted poster="img/carousel-1.jpg">
+                    <!-- Ganti "video/promo.mp4" dengan video Anda sendiri, durasi disarankan 45 detik -->
+                    <source src="vid/promo.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung tag video.
+                </video>
+            </div>
+        </div>
+    </section>
+    <!-- Video Section End -->
+
+
+    <!-- Best Seller Start -->
+    <section id="terlaris" class="container-xxl bg-light py-6">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">// Best Seller</p>
+                <h1 class="display-6 mb-4">Produk Terlaris Kami</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="menu-item product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <span class="ribbon ribbon-terlaris">Best Seller</span>
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/roti1.jpg" alt="Roti Coklat">
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-2">Roti Coklat</h5>
+                            <p class="mb-2 small">Roti lembut isi coklat leleh, dipanggang segar setiap pagi.</p>
+                            <div class="menu-price text-primary mb-3">Rp 15.000</div>
+                            <button type="button" class="btn btn-primary rounded-pill px-4 btn-add-cart" data-id="ts-1" data-name="Roti Coklat" data-price="15000" data-img="img/product-1.jpg">
+                                <i class="fa fa-cart-plus me-2"></i>Tambah Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="menu-item product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <span class="ribbon ribbon-terlaris">Best Seller</span>
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/roti2.jpg" alt="Cheese Cake">
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-2">Cheese Cake</h5>
+                            <p class="mb-2 small">Kue keju lembut dengan rasa creamy dan lumer di mulut.</p>
+                            <div class="menu-price text-primary mb-3">Rp 35.000</div>
+                            <button type="button" class="btn btn-primary rounded-pill px-4 btn-add-cart" data-id="ts-2" data-name="Cheese Cake" data-price="35000" data-img="img/product-2.jpg">
+                                <i class="fa fa-cart-plus me-2"></i>Tambah Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="menu-item product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <span class="ribbon ribbon-terlaris">Best Seller</span>
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/roti3.jpg" alt="Cookies Coklat">
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-2">Cookies Coklat</h5>
+                            <p class="mb-2 small">Cookies renyah dengan potongan coklat chip melimpah.</p>
+                            <div class="menu-price text-primary mb-3">Rp 20.000</div>
+                            <button type="button" class="btn btn-primary rounded-pill px-4 btn-add-cart" data-id="ts-3" data-name="Cookies Coklat" data-price="20000" data-img="img/product-3.jpg">
+                                <i class="fa fa-cart-plus me-2"></i>Tambah Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="menu-item product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <span class="ribbon ribbon-terlaris">Best Seller</span>
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/roti4.jpg" alt="Donat Gula">
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-2">Donat Gula</h5>
+                            <p class="mb-2 small">Donat empuk taburan gula halus, favorit anak-anak.</p>
+                            <div class="menu-price text-primary mb-3">Rp 8.000</div>
+                            <button type="button" class="btn btn-primary rounded-pill px-4 btn-add-cart" data-id="ts-4" data-name="Donat Gula" data-price="8000" data-img="img/product-1.jpg">
+                                <i class="fa fa-cart-plus me-2"></i>Tambah Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="menu-item product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <span class="ribbon ribbon-terlaris">Best Seller</span>
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/roti5.jpg" alt="Roti Sobek Keju">
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-2">Roti Sobek Keju</h5>
+                            <p class="mb-2 small">Roti sobek dengan taburan keju melimpah di setiap sisinya.</p>
+                            <div class="menu-price text-primary mb-3">Rp 25.000</div>
+                            <button type="button" class="btn btn-primary rounded-pill px-4 btn-add-cart" data-id="ts-5" data-name="Roti Sobek Keju" data-price="25000" data-img="img/product-2.jpg">
+                                <i class="fa fa-cart-plus me-2"></i>Tambah Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="menu-item product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <span class="ribbon ribbon-terlaris">Best Seller</span>
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/roti6.jpg" alt="Brownies Panggang">
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-2">Brownies Panggang</h5>
+                            <p class="mb-2 small">Brownies padat dengan rasa coklat pekat khas oven.</p>
+                            <div class="menu-price text-primary mb-3">Rp 30.000</div>
+                            <button type="button" class="btn btn-primary rounded-pill px-4 btn-add-cart" data-id="ts-6" data-name="Brownies Panggang" data-price="30000" data-img="img/product-3.jpg">
+                                <i class="fa fa-cart-plus me-2"></i>Tambah Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Best Seller End -->
+
+
+    <!-- Produk Unggulan Start -->
+    <section id="unggulan" class="container-xxl py-6">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">// Pilihan Kami</p>
+                <h1 class="display-6 mb-4">Produk Unggulan</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="menu-item product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <span class="ribbon ribbon-unggulan">Unggulan</span>
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/kuetart.jpg" alt="Kue Tart Buah">
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-2">Kue Tart Buah</h5>
+                            <p class="mb-2 small">Tart lembut dengan topping buah segar pilihan.</p>
+                            <div class="menu-price text-primary mb-3">Rp 120.000</div>
+                            <button type="button" class="btn btn-primary rounded-pill px-4 btn-add-cart" data-id="ug-1" data-name="Kue Tart Buah" data-price="120000" data-img="img/product-2.jpg">
+                                <i class="fa fa-cart-plus me-2"></i>Tambah Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="menu-item product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <span class="ribbon ribbon-unggulan">Unggulan</span>
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/croissant.jpg" alt="Croissant Almond">
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-2">Croissant Almond</h5>
+                            <p class="mb-2 small">Croissant berlapis renyah dengan taburan almond panggang.</p>
+                            <div class="menu-price text-primary mb-3">Rp 22.000</div>
+                            <button type="button" class="btn btn-primary rounded-pill px-4 btn-add-cart" data-id="ug-2" data-name="Croissant Almond" data-price="22000" data-img="img/product-3.jpg">
+                                <i class="fa fa-cart-plus me-2"></i>Tambah Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="menu-item product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <span class="ribbon ribbon-unggulan">Unggulan</span>
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/rotisosis.jpg" alt="Roti Isi Sosis">
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-2">Roti Isi Sosis</h5>
+                            <p class="mb-2 small">Roti gurih isi sosis, cocok untuk sarapan praktis.</p>
+                            <div class="menu-price text-primary mb-3">Rp 12.000</div>
+                            <button type="button" class="btn btn-primary rounded-pill px-4 btn-add-cart" data-id="ug-3" data-name="Roti Isi Sosis" data-price="12000" data-img="img/product-1.jpg">
+                                <i class="fa fa-cart-plus me-2"></i>Tambah Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="menu-item product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <span class="ribbon ribbon-unggulan">Unggulan</span>
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/redvelvet.jpg" alt="Red Velvet Cake">
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-2">Red Velvet Cake</h5>
+                            <p class="mb-2 small">Cake merah lembut dengan cream cheese frosting.</p>
+                            <div class="menu-price text-primary mb-3">Rp 140.000</div>
+                            <button type="button" class="btn btn-primary rounded-pill px-4 btn-add-cart" data-id="ug-4" data-name="Red Velvet Cake" data-price="140000" data-img="img/product-2.jpg">
+                                <i class="fa fa-cart-plus me-2"></i>Tambah Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="menu-item product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <span class="ribbon ribbon-unggulan">Unggulan</span>
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/puff.jpg" alt="Puff Pastry Keju">
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-2">Puff Pastry Keju</h5>
+                            <p class="mb-2 small">Pastry berlapis renyah dengan isian keju lumer.</p>
+                            <div class="menu-price text-primary mb-3">Rp 18.000</div>
+                            <button type="button" class="btn btn-primary rounded-pill px-4 btn-add-cart" data-id="ug-5" data-name="Puff Pastry Keju" data-price="18000" data-img="img/product-3.jpg">
+                                <i class="fa fa-cart-plus me-2"></i>Tambah Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="menu-item product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <span class="ribbon ribbon-unggulan">Unggulan</span>
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/rotigandum.jpg" alt="Roti Gandum">
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-2">Roti Gandum</h5>
+                            <p class="mb-2 small">Roti sehat berbahan dasar gandum utuh rendah gula.</p>
+                            <div class="menu-price text-primary mb-3">Rp 17.000</div>
+                            <button type="button" class="btn btn-primary rounded-pill px-4 btn-add-cart" data-id="ug-6" data-name="Roti Gandum" data-price="17000" data-img="img/product-1.jpg">
+                                <i class="fa fa-cart-plus me-2"></i>Tambah Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-muted small mt-3">*Gambar produk masih memakai foto contoh (product-1/2/3.jpg), silakan ganti dengan foto asli masing-masing produk.</p>
+        </div>
+    </section>
+    <!-- Produk Unggulan End -->
+
+
+    <!-- Cara Belanja Start -->
+    <section id="cara-belanja" class="container-xxl bg-light py-6">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="text-primary text-uppercase mb-2">// Cara Belanja</p>
+                <h1 class="display-6 mb-4">Cara Bertransaksi Menggunakan QRIS</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3 col-sm-6 text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="step-circle bg-primary text-white mx-auto mb-3">1</div>
+                    <h6>Pilih Produk</h6>
+                    <p class="small">Klik "Tambah Keranjang" pada produk yang Anda inginkan.</p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="step-circle bg-primary text-white mx-auto mb-3">2</div>
+                    <h6>Buka Keranjang</h6>
+                    <p class="small">Klik ikon keranjang di navigasi untuk memeriksa pesanan Anda.</p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="step-circle bg-primary text-white mx-auto mb-3">3</div>
+                    <h6>Bayar QRIS</h6>
+                    <p class="small">Klik "Bayar dengan QRIS" lalu scan kode menggunakan e-wallet Anda.</p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="step-circle bg-primary text-white mx-auto mb-3">4</div>
+                    <h6>Selesai</h6>
+                    <p class="small">Klik "Saya Sudah Bayar" dan pesanan Anda akan segera diproses.</p>
+                </div>
+            </div>
+            <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.1s">
+                <button type="button" class="btn btn-primary rounded-pill py-3 px-5" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+                    <i class="fa fa-shopping-cart me-2"></i>Lihat Keranjang Saya
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Cara Belanja End -->
+
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 id="cartOffcanvasLabel">Keranjang Belanja</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <div id="cartItemsContainer" class="flex-grow-1">
+                <p class="text-muted" id="cartEmptyMessage">Keranjang masih kosong. Yuk pilih produk favoritmu!</p>
+            </div>
+            <div class="border-top pt-3 mt-3">
+                <div class="d-flex justify-content-between mb-3">
+                    <strong>Total</strong>
+                    <strong id="cartTotal">Rp 0</strong>
+                </div>
+                <button type="button" id="btnBayarQris" class="btn btn-primary w-100 rounded-pill py-2" data-bs-toggle="modal" data-bs-target="#qrisModal">
+                    <i class="fa fa-qrcode me-2"></i>Bayar dengan QRIS
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- QRIS Modal -->
+    <div class="modal fade" id="qrisModal" tabindex="-1" aria-labelledby="qrisModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="qrisModalLabel">Pembayaran QRIS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <!-- Ganti img/qris.png dengan gambar QRIS asli toko Anda -->
+                    <img id="qrisImage" src="img/qris.png" alt="Kode QRIS" class="mb-3 border rounded p-2">
+                    <p class="mb-1">Total pembayaran:</p>
+                    <h4 id="qrisTotal" class="text-primary mb-3">Rp 0</h4>
+                    <p class="small text-muted">Scan kode QRIS di atas menggunakan aplikasi e-wallet atau m-banking Anda, lalu selesaikan pembayaran.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Batal</button>
+                    <button type="button" id="btnKonfirmasiBayar" class="btn btn-primary rounded-pill px-4" data-bs-dismiss="modal">Saya Sudah Bayar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Maps Start -->
+    <section id="maps" class="container-xxl py-6">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">// Lokasi Kami</p>
+                <h1 class="display-6 mb-4">Kunjungi Ilsa Bakery</h1>
+                <p>Desa Siwalan, Krengseng 01/07, Kec. Siwalan, Kabupaten Pekalongan</p>
+            </div>
+            <div class="wow fadeInUp" data-wow-delay="0.2s">
+                <!-- Jika lokasi belum tepat, cari alamat ini di Google Maps lalu salin link embed-nya ke sini -->
+                <iframe class="maps-frame" src="https://www.google.com/maps?q=Desa+Siwalan,+Krengseng,+Kecamatan+Siwalan,+Kabupaten+Pekalongan&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Maps End -->
+
+
+    <!-- Sosmed & Youtube Start -->
+    <section id="sosmed" class="container-xxl bg-light py-6">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="text-primary text-uppercase mb-2">// Video Kami</p>
+                    <h1 class="display-6 mb-4">Tonton Channel YouTube Ilsa Bakery</h1>
+                    <div class="ratio ratio-16x9 rounded overflow-hidden">
+                        <!-- Ganti ID video di bawah dengan video YouTube resmi channel ilsabakery -->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nfRcTGzY4oA?si=B6DF4j4QIUdc2xvG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
+                    <a href="https://youtube.com/@ilsabakery" target="_blank" class="btn btn-outline-primary rounded-pill px-4 mt-3">
+                        <i class="fab fa-youtube me-2"></i>Kunjungi Channel Kami
+                    </a>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <p class="text-primary text-uppercase mb-2">// Terhubung Dengan Kami</p>
+                    <h1 class="display-6 mb-4">Ikuti Sosial Media Ilsa Bakery</h1>
+                    <p class="mb-4">Dapatkan promo, produk baru, dan update terbaru dengan mengikuti akun sosial media kami.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="https://instagram.com/ilsabakery" target="_blank" class="btn btn-primary rounded-pill px-4"><i class="fab fa-instagram me-2"></i>@ilsabakery</a>
+                        <a href="https://tiktok.com/@ilsabakery" target="_blank" class="btn btn-primary rounded-pill px-4"><i class="fab fa-tiktok me-2"></i>@ilsabakery</a>
+                        <a href="https://youtube.com/@ilsabakery" target="_blank" class="btn btn-primary rounded-pill px-4"><i class="fab fa-youtube me-2"></i>ilsabakery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sosmed & Youtube End -->
+
+
+    <!-- Footer Start -->
+    <div id="footer" class="container-fluid bg-dark text-light footer my-6 mb-0 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Alamat Toko</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Desa Siwalan, Krengseng 01/07, Kec. Siwalan, Pekalongan</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+62 812 3456 7890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>ilsabakery@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href="https://instagram.com/ilsabakery" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href="https://tiktok.com/@ilsabakery" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-0" href="https://youtube.com/@ilsabakery" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Photo Gallery</h4>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/product-1.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/product-2.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/product-3.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/product-2.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/product-3.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/product-1.jpg" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#home">Ilsa Bakery</a>, All Right Reserved.
+                    <br>
+                    <small>Nama: <strong>Ilham Perkasa</strong> &nbsp;|&nbsp; NIM: <strong>25.240.0030</strong></small>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                    <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Cart & QRIS Javascript (self-contained, does not touch js/main.js) -->
+    <script>
+        (function() {
+            const CART_KEY = 'bakerCart';
+
+            function formatRupiah(num) {
+                return 'Rp ' + Number(num).toLocaleString('id-ID');
+            }
+
+            function getCart() {
+                try {
+                    return JSON.parse(localStorage.getItem(CART_KEY)) || [];
+                } catch (e) {
+                    return [];
+                }
+            }
+
+            function saveCart(cart) {
+                localStorage.setItem(CART_KEY, JSON.stringify(cart));
+            }
+
+            function addToCart(item) {
+                const cart = getCart();
+                const existing = cart.find(function(i) {
+                    return i.id === item.id;
+                });
+                if (existing) {
+                    existing.qty += 1;
+                } else {
+                    cart.push(Object.assign({
+                        qty: 1
+                    }, item));
+                }
+                saveCart(cart);
+                renderCart();
+            }
+
+            function changeQty(id, delta) {
+                let cart = getCart();
+                cart = cart.map(function(i) {
+                    if (i.id === id) {
+                        i.qty += delta;
+                    }
+                    return i;
+                }).filter(function(i) {
+                    return i.qty > 0;
+                });
+                saveCart(cart);
+                renderCart();
+            }
+
+            function removeItem(id) {
+                let cart = getCart().filter(function(i) {
+                    return i.id !== id;
+                });
+                saveCart(cart);
+                renderCart();
+            }
+
+            function cartTotal(cart) {
+                return cart.reduce(function(sum, i) {
+                    return sum + (i.price * i.qty);
+                }, 0);
+            }
+
+            function renderCart() {
+                const cart = getCart();
+                const container = document.getElementById('cartItemsContainer');
+                const totalEl = document.getElementById('cartTotal');
+                const qrisTotalEl = document.getElementById('qrisTotal');
+                const badge = document.getElementById('cartCountBadge');
+
+                if (!container) return;
+
+                if (cart.length === 0) {
+                    container.innerHTML = '<p class="text-muted" id="cartEmptyMessage">Keranjang masih kosong. Yuk pilih produk favoritmu!</p>';
+                } else {
+                    container.innerHTML = cart.map(function(i) {
+                        return '' +
+                            '<div class="d-flex align-items-center gap-3 mb-3 cart-line-item">' +
+                            '<img src="' + i.img + '" class="rounded" alt="' + i.name + '">' +
+                            '<div class="flex-grow-1">' +
+                            '<div class="fw-bold">' + i.name + '</div>' +
+                            '<div class="small text-muted">' + formatRupiah(i.price) + ' x ' + i.qty + '</div>' +
+                            '<div class="d-flex align-items-center gap-2 mt-1">' +
+                            '<button class="btn btn-sm btn-outline-secondary btn-qty-minus" data-id="' + i.id + '">-</button>' +
+                            '<span>' + i.qty + '</span>' +
+                            '<button class="btn btn-sm btn-outline-secondary btn-qty-plus" data-id="' + i.id + '">+</button>' +
+                            '<button class="btn btn-sm btn-link text-danger btn-remove-item" data-id="' + i.id + '">Hapus</button>' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>';
+                    }).join('');
+                }
+
+                const total = cartTotal(cart);
+                if (totalEl) totalEl.textContent = formatRupiah(total);
+                if (qrisTotalEl) qrisTotalEl.textContent = formatRupiah(total);
+                if (badge) {
+                    const count = cart.reduce(function(sum, i) {
+                        return sum + i.qty;
+                    }, 0);
+                    badge.textContent = count;
+                    badge.style.display = count > 0 ? 'inline-block' : 'none';
+                }
+            }
+
+            document.addEventListener('click', function(e) {
+                const addBtn = e.target.closest('.btn-add-cart');
+                if (addBtn) {
+                    addToCart({
+                        id: addBtn.dataset.id,
+                        name: addBtn.dataset.name,
+                        price: parseInt(addBtn.dataset.price, 10),
+                        img: addBtn.dataset.img
+                    });
+                    addBtn.innerHTML = '<i class="fa fa-check me-2"></i>Ditambahkan';
+                    setTimeout(function() {
+                        addBtn.innerHTML = '<i class="fa fa-cart-plus me-2"></i>Tambah Keranjang';
+                    }, 1200);
+                    return;
+                }
+
+                const plusBtn = e.target.closest('.btn-qty-plus');
+                if (plusBtn) {
+                    changeQty(plusBtn.dataset.id, 1);
+                    return;
+                }
+
+                const minusBtn = e.target.closest('.btn-qty-minus');
+                if (minusBtn) {
+                    changeQty(minusBtn.dataset.id, -1);
+                    return;
+                }
+
+                const removeBtn = e.target.closest('.btn-remove-item');
+                if (removeBtn) {
+                    removeItem(removeBtn.dataset.id);
+                    return;
+                }
+
+                const confirmPayBtn = e.target.closest('#btnKonfirmasiBayar');
+                if (confirmPayBtn) {
+                    saveCart([]);
+                    renderCart();
+                    alert('Terima kasih! Pembayaran QRIS Anda telah dikonfirmasi.');
+                    return;
+                }
+            });
+
+            document.addEventListener('DOMContentLoaded', renderCart);
+            renderCart();
+        })();
+    </script>
+</body>
+
+</html>
